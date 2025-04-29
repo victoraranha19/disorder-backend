@@ -31,8 +31,10 @@ patchTransacao(server);
 deleteTransacao(server);
 
 try {
-  await server.listen({ port: process.env.PORT ?? 3000 });
-  server.log.info(`Server listening on ${server.server.address().port}`);
+  await server.listen({
+    host: '0.0.0.0',
+    port: process.env.PORT ?? 3000
+  });
 } catch (err) {
   server.log.error(err);
   process.exit(1);
