@@ -1,0 +1,39 @@
+
+
+
+###
+GET http://localhost:3333/usuarios
+
+
+###
+POST http://localhost:3333/usuarios
+Content-Type: application/json
+
+{
+  "titulo": "Nova Categoria",
+  "valorMes": 100,
+  "idUsuario": 3
+}
+
+###
+PUT http://localhost:3333/usuarios/3
+Content-Type: application/json
+
+{
+  "nomecompleto": "Aldo 2",
+  "emailcontato": "email@com.br",
+  "chavepix": null,
+  "idconsultor": null,
+  "restricoesconsultor": null
+}
+
+###
+PATCH http://localhost:3333/usuarios/3
+Content-Type: application/json
+
+{
+  "nomecompleto": "Aldo 3"
+}
+
+###
+DELETE http://localhost:3333/usuarios/2

@@ -1,0 +1,37 @@
+
+
+
+###
+GET http://localhost:3333/carteiras
+
+
+###
+POST http://localhost:3333/carteiras
+Content-Type: application/json
+
+{
+  "titulo": "Nova carteira",
+  "valorNaConta": 100,
+  "limiteCreditoTotal": 100,
+  "idUsuario": 3
+}
+
+###
+PUT http://localhost:3333/carteiras/2
+Content-Type: application/json
+
+{
+  "titulo": "carteira Atualizada",
+  "valorNaConta": 150
+}
+
+###
+PATCH http://localhost:3333/carteiras/2
+Content-Type: application/json
+
+{
+  "limiteCreditoTotal": 2000
+}
+
+###
+DELETE http://localhost:3333/carteiras/1

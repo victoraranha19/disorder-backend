@@ -1,0 +1,37 @@
+
+
+
+###
+GET http://localhost:3333/categorias
+
+
+###
+POST http://localhost:3333/categorias
+Content-Type: application/json
+
+{
+  "titulo": "Nova Categoria",
+  "valorMes": 100,
+  "idUsuario": 3
+}
+
+###
+PUT http://localhost:3333/categorias/2
+Content-Type: application/json
+
+{
+  "titulo": "Categoria Atualizada",
+  "valorMes": 150,
+  "ativo": true
+}
+
+###
+PATCH http://localhost:3333/categorias/5
+Content-Type: application/json
+
+{
+  "ativo": false
+}
+
+###
+DELETE http://localhost:3333/categorias/5

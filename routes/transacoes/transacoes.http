@@ -1,0 +1,41 @@
+
+
+
+###
+GET http://localhost:3333/transacoes
+
+
+###
+POST http://localhost:3333/transacoes
+Content-Type: application/json
+
+{
+  "descricao": "Nova transação",
+  "valor": 100,
+  "dataTransacao": "2023-10-01",
+  "tipo": "C",
+  "idUsuario": 3
+}
+
+###
+PUT http://localhost:3333/transacoes/1
+Content-Type: application/json
+
+{
+  "descricao": "Nova transação",
+  "valor": 100,
+  "tipo": "D",
+  "idCarteira": 2
+}
+
+###
+PATCH http://localhost:3333/transacoes/1
+Content-Type: application/json
+
+{
+  "idCategoria": 4,
+  "ativo": false
+}
+
+###
+DELETE http://localhost:3333/transacoes/1
